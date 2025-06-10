@@ -5,10 +5,10 @@ plugins {
 }
 
 group = 'yeoback'
-version = '0.2.0b'
+version = '0.3b'
 
 application {
-    mainClass = 'AES'
+    mainClass = 'Gui'
 }
 
 java {
@@ -25,6 +25,7 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation 'commons-cli:commons-cli:1.9.0'
+    implementation 'com.googlecode.lanterna:lanterna:3.1.1'
 }
 
 test {

@@ -10,7 +10,7 @@ if ! command -v java &> /dev/null; then
     exit 1
 fi
 
-java -jar AES-java-0.2b.jar --e --keysize 256 --mode cbc --padding pkcs7padding \
+java -jar AES-java-0.3b.jar --e --keysize 256 --mode cbc --padding pkcs7padding \
 --infile plain.txt \
 --o cipher.txt \
 --keypath Sec_key.txt \

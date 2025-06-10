@@ -73,7 +73,7 @@ public class AES {
             byte[] K = Functions.readHexFromFile(keyPath);              // 암호키 파일에서 hex값 가져오고 byte로 저장.
             byte[] IV = Functions.readHexFromFile(ivPath);              // 초기화 벡터 파일에서 hex값 가져오고 byte로 저장.
             
-            // 키 길이가 평문길이와 일치 하지 않을 경우 반환.
+            // 키 길이가 선택한 키 길이와 일치 하지 않을 경우 반환.
             if (keySize / 8 != K.length) {
                 throw new IllegalArgumentException(
                         "Key size error. Please check your Key File.\n"
